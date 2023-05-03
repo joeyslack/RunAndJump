@@ -18,6 +18,8 @@ class GameViewController: UIViewController {
         // create a new scene
         let scene = SCNScene(named: "art.scnassets/ship.scn")!
         
+        scene.background.contents = UIImage(named: "blue-galaxy-31677")
+        
         // create and add a camera to the scene
         let cameraNode = SCNNode()
         cameraNode.camera = SCNCamera()
